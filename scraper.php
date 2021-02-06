@@ -43,7 +43,6 @@
 
         }
     }
-    print_r($answer);
 
     //create a .json file and save the results
     $file = fopen('results.json', 'w');

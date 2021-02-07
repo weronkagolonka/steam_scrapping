@@ -13,6 +13,7 @@
         $i = 0;
         foreach($dom->find(".search_result_row") as $aClass) {
 
+            //loop through each search result row and retreieve the data that has to be saved in .json file
             $title = $aClass->find(".title", 0)->plaintext;
             $photoURL = $aClass->find("img", 0)->src;
             $price = trim($aClass->find(".col.search_price", 0)->plaintext);
